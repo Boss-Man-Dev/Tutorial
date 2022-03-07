@@ -1,7 +1,14 @@
+-- init vRP server context
 Tunnel = module("vrp", "lib/Tunnel")
 Proxy = module("vrp", "lib/Proxy")
+
 local cvRP = module("vrp", "client/vRP")
 vRP = cvRP()
+
+local pvRP = {}
+-- load script in vRP context
+pvRP.loadScript = module
+Proxy.addInterface("vRP", pvRP)
 --[[
 ******************************************************************************************
 						Dont change anything above this line
