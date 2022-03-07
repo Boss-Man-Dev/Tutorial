@@ -1,4 +1,4 @@
-this setup is for a mix of vrp and esx
+this setup is for vrp2
 
 Getting Started:
 	chose either the fxmanifest or __rescource.
