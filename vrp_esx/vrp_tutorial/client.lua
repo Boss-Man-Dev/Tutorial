@@ -1,11 +1,16 @@
---##########	VRP Main	##########--
-Tunnel = module("vrp", "lib/Tunnel")
-Proxy = module("vrp", "lib/Proxy")
-local cvRP = module("vrp", "client/vRP")
-vRP = cvRP()
+
 --[[
 ******************************************************************************************
 						Dont change anything above this line
 ******************************************************************************************
 --]]
+
+--#########  event calls from server ##############
+RegisterNetEvent('tutorial:test')
+AddEventHandler('tutorial:test', function()
+	--[[
+			Code goes here
+	--]]
+	TriggerServerEvent('tutorial:test')			-- triggers server event
+end)
 
